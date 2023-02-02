@@ -2,7 +2,7 @@ type Category {
   id: ID!
   name: String!
   description: String
-  courses: [Couse!]!
+  courses: [Course!]!
 }
 
 type Course {
@@ -30,5 +30,5 @@ type Query {
 
 type Mutation {
   createCategory(input: NewCategory): Category!
-  createCourse(input: NewCourse): Category!
+  createCourse(input: NewCourse): Course!
 }
